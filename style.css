@@ -1,0 +1,10 @@
+#maintable {
+    border-style: solid;
+    border-width: 3px;
+    border-color: chocolate;
+}
+th, td {
+    border-style:solid;
+    border-width:2px;
+    border-color: chocolate;
+}

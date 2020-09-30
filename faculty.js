@@ -14,17 +14,12 @@ var drawTable = function(faculty)
     
     rows.append("td")
     .text(function(faculty){
-        return faculty.FirstName;
+        return faculty.Firstname;
     })
     
     rows.append("td")
     .text(function(faculty){
-        return faculty.LastName;
-    })
-    
-    rows.append("td")
-    .text(function(faculty){
-        return faculty.LastName2;
+        return faculty.Lastname;
     })
     
     rows.append("td")
@@ -34,16 +29,11 @@ var drawTable = function(faculty)
     
     rows.append("td")
     .text(function(faculty){
-        return faculty.Organization;
-    })
-    
-    rows.append("td")
-    .text(function(faculty){
         return faculty.Email;
     })
 }
 
-var getData = d3.csv("Faculty.csv")
+var getData = d3.csv("employee - Sheet1.csv")
 getData.then(
 function(faculty){
     setBanner("Faculty Data"); console.log(faculty); drawTable(faculty);
