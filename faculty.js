@@ -33,7 +33,7 @@ var drawTable = function(faculty)
     })
 }
 
-var getData = d3.csv("employee - Sheet1.csv")
+var getData = d3.csv("employee.csv")
 getData.then(
 function(faculty){
     setBanner("Faculty Data"); console.log(faculty); drawTable(faculty);
